@@ -51,6 +51,16 @@
   categories: [ HideSpawnMenu ]
 
 - type: entity
+  id: RecordsFrontierOutpostCargo
+  parent:
+  - StandardFrontierOutpost
+  - BaseStationRecords
+  - BaseStationCargo
+  - NFBaseStationCargo
+  - BaseStationCargoMarket
+  categories: [ HideSpawnMenu ]
+
+- type: entity
   id: DeadDropRecordsFrontierOutpost
   parent:
   - StandardFrontierOutpost
@@ -65,6 +75,8 @@
   - BaseStationRecords
   - BaseStationSiliconLawFrontierStation # No funny borg laws
   - BaseStationDampening
+  - BaseStationCargoMarket # Mono
+  - NFBaseStationCargo # Mono
   categories: [ HideSpawnMenu ]
   components:
   - type: Transform

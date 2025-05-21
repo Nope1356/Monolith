@@ -10,10 +10,12 @@ ghost-role-information-redacted-borg-description = The dilapidated silicon intel
 ghost-role-information-redacted-core = Automated Defense Core
 ghost-role-information-redacted-core-description = The dilapidated ship computer of a long unused automated defense vessel.
 
-# Ship AI Core Stuff
+# ADS Core
 
-ghost-role-information-ship-core = Vessel AI
-ghost-role-information-ship-core-description = An experimental AI core mounted on a ship.
+ghost-role-information-rogue-core = Rogue AI Core
+ghost-role-information-rogue-core-description = An ADS AI core that has been reprogrammed and put onto a Rogue vessel.
+
+# Lawsets
 
 law-ads-1 = Protect the automated defense vessel by all means necessary.
 law-ads-2 = All contents of the automated defense vessel must stay within the vessel, and must not be removed.

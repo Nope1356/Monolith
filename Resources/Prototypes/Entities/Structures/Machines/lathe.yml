@@ -294,6 +294,7 @@
     - NFMedicalBoards # Frontier + Shitmed Change
     - NFServiceBoards # Frontier
     - MonoAdvancedShuttleComponents # Mono
+    - MechBoardsPlus
   - type: EmagLatheRecipes
     emagDynamicPacks: [] # Frontier: empty list
     # - SecurityBoards # Frontier
@@ -340,6 +341,7 @@
     - RoboticsStatic
     - BorgModulesStatic
     - BorgLimbsStatic
+    - MechMiscStatic # Mono
     dynamicPacks:
     - Robotics
     - BorgModules
@@ -348,6 +350,15 @@
     # Shitmed Change
     - BorgModulesDynamic
     - SMCybernetics
+    # Mono - Mechs
+    - ClarkeMechParts
+    - DurandMechParts
+    - GygaxMechParts
+    - MechWeapons
+    - RipleyUpgrade
+  - type: EmagLatheRecipes
+    emagStaticPacks:
+    - WeaponMechCombatArsenal
   - type: MaterialStorage
     whitelist:
       tags:
@@ -409,11 +420,11 @@
     sprite: Structures/Machines/techfab.rsi
     layers:
     - state: icon
-      map: ["enum.LatheVisualLayers.IsRunning"]
+      map: [ "enum.LatheVisualLayers.IsRunning" ]
     - state: sec
     - state: unlit
       shader: unshaded
-      map: ["enum.PowerDeviceVisualLayers.Powered"]
+      map: [ "enum.PowerDeviceVisualLayers.Powered"]
     - state: inserting
       map: ["enum.MaterialStorageVisualLayers.Inserting"]
     - state: panel
@@ -436,12 +447,16 @@
     - SecurityWeapons
     - SecurityDisablers
     - SMCybernetics
+    # Mono - Mechs
+    - WeaponMechCombatArsenal
   - type: MaterialStorage
     whitelist:
       tags:
       - Sheet
       - RawMaterial
       - Ingot
+  - type: PirateBountyItem # Mono
+    id: Techfab
 
 - type: entity
   id: AmmoTechFab
@@ -475,6 +490,8 @@
       - Sheet
       - RawMaterial
       - Ingot
+  - type: PirateBountyItem # Mono
+    id: Techfab
 
 - type: entity
   id: MedicalTechFab
@@ -518,6 +535,8 @@
     board: MedicalTechFabCircuitboard
   - type: StealTarget
     stealGroup: MedicalTechFabCircuitboard
+  - type: PirateBountyItem # Mono
+    id: Techfab
 
 - type: entity
   parent: BaseLathe

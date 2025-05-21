@@ -23,6 +23,7 @@
     angleIncrease: 3
     angleDecay: 16
     selectedMode: FullAuto
+    projectileSpeed: 50 # Mono
     availableModes:
     - SemiAuto
     - FullAuto
@@ -182,6 +183,9 @@
     - type: Appearance
     - type: StaticPrice # Mono
       price: 525
+    - type: PirateBountyItem # Mono
+      id: StandardTSFLongarm
+
 
 - type: entity
   name: WT550
@@ -246,3 +250,5 @@
   - type: Appearance
   - type: StaticPrice # Mono
     price: 1000
+  - type: PirateBountyItem # Mono
+    id: StandardTSFLongarm

@@ -1,8 +1,8 @@
 - type: entity
   parent: [EncryptionKey, RecyclableItemDeviceTiny]
   id: EncryptionKeyTraffic
-  name: traffic control encryption key
-  description: An encryption key for the space traffic control channel.
+  name: shortband encryption key
+  description: An encryption key for the shortband channel. Limited to a 500 meters range.
   components:
   - type: EncryptionKey
     channels:
@@ -19,9 +19,9 @@
 - type: entity
   parent: EncryptionKey
   id: EncryptionKeyNfsd
-  name: NCMC encryption key
+  name: TSFMC encryption key
   categories: [ DoNotMap ]
-  description: An encryption key for the New Congressional Colonial Marines' channel.
+  description: An encryption key for the TSFMC channel.
   components:
   - type: EncryptionKey
     channels:
@@ -34,6 +34,9 @@
     layers:
     - state: crypt_gray
     - state: nfsd_label
+  - type: PirateBountyItem # Mono
+    id: EncryptionKeyNfsd
+
 
 - type: entity
   parent: EncryptionKey

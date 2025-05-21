@@ -56,9 +56,22 @@
     contents:
       - id: WeaponSubMachineGunC20r
       - id: MagazinePistolSubMachineGun
-        amount: 2
+        amount: 3
 #     - id: SMGSuppressor
-
+# Mono edit
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateBundle
+  id: ClothingBackpackDuffelSyndicateFilledAtreides
+  name: Atreides bundle
+  description: "Sleek and deadly: A compact, one-handed Submachine Gun favored by the old Syndicate hands, bundled with three magazines." #, and a Suppressor.
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponSubMachineGunAtreides
+      - id: MagazinePistolSubMachineGun
+        amount: 3
+#     - id: SMGSuppressor
+# Mono edit end
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
   id: ClothingBackpackDuffelSyndicateFilledRevolver
@@ -118,7 +131,7 @@
   parent: ClothingBackpackDuffelSyndicateAmmo
   id: ClothingBackpackDuffelSyndicateAmmoFilled
   name: ammo bundle
-  description: "Reloading! Contains 4 magazines for the C-20r, 4 drums for the Bulldog, and 2 ammo boxes for the L6 SAW."
+  description: "Reloading! Contains 4 magazines for the C-20r, 4 drums for the Bulldog, 2 ammo boxes for the L6 SAW, and 3 mags for the Burner."
   components:
   - type: StorageFill
     contents:
@@ -128,6 +141,10 @@
         amount: 4
       - id: MagazineLightRifleBox
         amount: 2
+      - id: MagazineHighCaliber # Goobstation - Burner Heavy Assault Rifle
+        amount: 1
+      - id: MagazineHighCaliberExplosive # Goobstation - Burner Heavy Assault Rifle
+
 
 - type: entity
   parent: ClothingBackpackDuffelClown
@@ -250,6 +267,20 @@
   - type: StorageFill
     contents:
       - id: ClothingOuterHardsuitSyndie
+      - id: ClothingMaskGasSyndicate
+      - id: ClothingHandsGlovesCombat
+      - id: DoubleEmergencyOxygenTankFilled
+      - id: DoubleEmergencyNitrogenTankFilled
+
+- type: entity # Mono
+  parent: ClothingBackpackDuffelSyndicateBundle
+  id: ClothingBackpackDuffelSyndicateMedicHardsuitBundle
+  name: syndicate medic hardsuit bundle
+  description: "Contains the Syndicate's blood red medical hardsuit."
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingOuterHardsuitSyndieMedic
       - id: ClothingMaskGasSyndicate
       - id: ClothingHandsGlovesCombat
       - id: DoubleEmergencyOxygenTankFilled

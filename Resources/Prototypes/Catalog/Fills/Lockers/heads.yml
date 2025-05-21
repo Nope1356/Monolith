@@ -71,7 +71,8 @@
     - id: ClothingMaskGasCaptain
     #    - id: JetpackCaptainFilled # Frontier
     #    - id: OxygenTankFilled # Frontier
-    - id: AirTankFilled # Frontier
+    - id: OxygenTankFilled
+    - id: NitrogenTankFilled
     - id: JetpackMiniFilled # Frontier
 
 # No laser locker, used when the antique laser is placed in the special display crate
@@ -180,7 +181,8 @@
     - id: ClothingShoesBootsMag # Frontier
     #    - id: JetpackVoidFilled # Frontier
     #    - id: OxygenTankFilled # Frontier
-    - id: AirTankFilled # Frontier
+    - id: OxygenTankFilled
+    - id: NitrogenTankFilled
     - id: JetpackMiniFilled # Frontier
 
 # No hardsuit locker
@@ -215,7 +217,7 @@
   table: !type:AllSelector
     children:
     #    - id: BoxEncryptionKeyMedical # Frontier - bloat
-    #    - id: ClothingBackpackDuffelSurgeryFilled # Frontier - bloat
+    - id: ClothingBackpackDuffelSurgeryFilled # Frontier Revert - Mono
     #    - id: ClothingCloakCmo # Frontier - bloat
     - id: ClothingEyesHudMedical
     #    - id: ClothingHandsGlovesNitrile # Frontier - bloat
@@ -227,13 +229,17 @@
     #    - id: Hypospray # Frontier - balance
     - id: HypoMini # Frontier
     #    - id: MedicalTechFabCircuitboard # Frontier - bloat
+    - id: MedicalTechFabFlatpack # Mono
+    - id: Multitool # Mono
     #    - id: MedkitFilled # Frontier - bloat
     #    - id: RubberStampCMO # Frontier - MOM stamp
+    - id: DefibrillatorCompact # Mono
     - id: MedTekCartridge
     - id: ClothingBeltMedicalFilled # Frontier - add more bloat
     - id: RubberStampDoctor # Frontier
     # Shitmed
     - id: MedicalBiofabMachineBoard
+    - id: MMI # Shitmed
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
@@ -243,7 +249,8 @@
     - id: ClothingMaskBreathMedical
     - id: ClothingOuterHardsuitMedical
     #    - id: OxygenTankFilled # Frontier
-    - id: AirTankFilled # Frontier
+    - id: OxygenTankFilled
+    - id: NitrogenTankFilled
     - id: JetpackMiniFilled # Frontier
 
 # No hardsuit locker
@@ -296,7 +303,8 @@
     - id: ClothingMaskBreath
     - id: ClothingOuterHardsuitRd
     #    - id: OxygenTankFilled # Frontier
-    - id: AirTankFilled # Frontier
+    - id: OxygenTankFilled
+    - id: NitrogenTankFilled
     - id: JetpackMiniFilled # Frontier
 
 # No hardsuit locker
